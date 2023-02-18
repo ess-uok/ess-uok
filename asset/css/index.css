@@ -222,3 +222,14 @@ nav{
 #menuToggle input:checked~ul {
     transform: none;
 }
+@media screen and (max-width: 900px){
+    .big {
+            font-size: 4rem;
+            padding: 1rem 2rem;
+        }
+    
+        .small {
+            font-size: 1rem;
+            padding: 0.5rem 2rem;
+        }
+}
