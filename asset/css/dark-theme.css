@@ -4,3 +4,6 @@
     --text-color: #d6d6d6;
     --highlight-color: #00b3ff;
 }
+.logo{
+    background-image: url(./../img/White\ logo.png);
+}
