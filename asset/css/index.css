@@ -235,4 +235,7 @@ nav{
             font-size: 1rem;
             padding: 0.5rem 2rem;
         }
+        #blob {
+            height: 250px;
+        }
 }
