@@ -1,8 +1,8 @@
 :root {
-    --bg-color: #000;
-    --main-color: #ffffff;
+    --bg-color: #0a0a0a;
+    --main-color: #f0f0f0;
     --text-color: #d6d6d6;
-    --highlight-color: #00b3ff;
+    --highlight-color: #ff0000;
 }
 .logo{
     background-image: url(./../img/White\ logo.png);

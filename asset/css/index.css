@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-:root {
-    --bg-color: #000;
-    --main-color: #ffffff;
-    --text-color: #d6d6d6;
-    --highlight-color: #00b3ff;
-
-}
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -17,7 +10,7 @@ body {
 
 .home {
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +73,7 @@ body {
     border-radius: 50%;
     animation: rotate 20s infinite;
     background: linear-gradient(to right,
-            aquamarine,
+            rgb(157, 0, 0),
             var(--highlight-color));
 }
 
