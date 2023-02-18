@@ -1,11 +1,11 @@
 const blob = document.getElementById("blob");
 
 document.body.onpointermove = event => {
-    const { pageX, pageY } = event;
+    const { clientX, clientY } = event;
 
     blob.animate({
-        left:  `${pageX}px`,
-        top: `${pageY}px`
+         left:  `${clientX}px`,
+        top: `${clientY}px`
     }, { duration: 3000, fill: "forwards"});
 };
 
