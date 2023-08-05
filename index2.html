@@ -17,8 +17,20 @@
     <title>ESS UOK</title>
 
 </head>
-<body onload="myFunction()">
-     <!--LOADER-->
+<body onload="myFunction()" >
+    <!--LOADER-->
+    <div class="loader__wrapper" id="loader">
+        <div class="loader">
+            <div class="gooey">
+                <span class="dot"></span>
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+        </div>
+    </div>
     <!--===== SCROLL TOP =====-->
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bxs-chevrons-up scrolltop__icon'></i>
@@ -236,7 +248,7 @@
         </footer>
 
      <!--===== js =====-->
-            <script>
+        <script>
 
                 function googleTranslateElementInit() {
                 new google.translate.TranslateElement({
@@ -246,10 +258,11 @@
                 layout: google.translate.TranslateElement.InlineLayout.VERTICAL
                 }, 'google_translate_element');
                 }
-            </script>
-            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+        </script>
+        <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
         <script src="/asset/js/timer.js"></script>
         <script src="/asset/js/Soon.js"></script>
         <script src="/asset/js/detect_browser.js"></script>
+        <script src="/asset/js/loader.js"></script>
 </body>
 </html>

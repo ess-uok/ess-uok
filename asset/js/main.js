@@ -1,3 +1,4 @@
+
 /*=====  hero section blob animation =====*/
 const blob = document.getElementById("blob");
 
@@ -42,13 +43,7 @@ document.querySelector('h1','h3').onmouseover = event => {
 /*===== SHOW SCROLL TOP =====*/
 function scrollTop() {
   const scrollTop = document.getElementById('scroll-top')
-  if (this.scrollY >= 500) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll');
+  if (this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll');
 }
 window.addEventListener('scroll', scrollTop)
 
-/*===== Loader =====*/
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 1000);
-}

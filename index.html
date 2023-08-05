@@ -17,8 +17,20 @@
     <title>ESS UOK</title>
 
 </head>
-<body onload="myFunction()">
+<body onload="myFunction()" style="overflow: hidden;">
      <!--LOADER-->
+     <div class="loader__wrapper" id="loader">
+        <div class="loader">
+            <div class="gooey">
+                <span class="dot"></span>
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+        </div>
+    </div>
     <!--===== SCROLL TOP =====-->
     <a href="#" class="scrolltop" id="scroll-top">
         <i class='bx bxs-chevrons-up scrolltop__icon'></i>
@@ -67,6 +79,7 @@
         </div>
     </nav>
     
+    <main id="main">
         <div class="blob" id="blob"></div>
         <div class="blur" id="blur"></div>
         <div>
@@ -108,6 +121,7 @@
                 </div>
             </div>
 
+    </main>
      <!--===== js =====-->
             <script>
 
@@ -124,5 +138,8 @@
         <script src="/asset/js/detect_browser.js"></script>
         <script src="/asset/js/timer.js"></script>
         <script src="/asset/js/Soon.js"></script>
+        <script src="/asset/js/main.js"></script>
+        <script src="/asset/js/loader.js"></script>
+        
 </body>
 </html>
