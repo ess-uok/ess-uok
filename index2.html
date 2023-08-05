@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="author" content="Deeghayu Adhikari">
+    <meta name="description" content="ESS UOK ">
+    <meta name="keywords" content="ESS UOK">
+    <link rel="icon" type="image/png" href="./asset/img/icon.png" />
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/loader.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/css/light-theme.css"
+        media="(prefers-color-scheme:light), (prefers-color-scheme:no-preference)">
+    <link rel="stylesheet" href="./asset/css/dark-theme.css" media="(prefers-color-scheme:dark)">
+    <title>ESS UOK</title>
+
+</head>
+<body onload="myFunction()">
+     <!--LOADER-->
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevrons-up scrolltop__icon'></i>
+    </a>
+    <!--===== Nav =====-->
+    <nav role="navigation">
+    <div class="logo"></div>
+        <div class="login-text">
+           <p><a href="#">Sign-Up</a> | <a href="">Log-In</a></p>
+        </div>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <hr>
+                <div id="google_translate_element"></div>
+                <hr>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Activities</li>
+                </a>
+                <a href="#">
+                    <li>Events</li>
+                </a>
+                <a href="#">
+                    <li>Resources</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <hr>
+                <a href="#">
+                    <li>Sign-Up</li>
+                </a>
+                <a href="#">
+                    <li>Log-In</li>
+                </a>
+                <hr>
+            </ul>
+        </div>
+    </nav>
+    
+        <div class="blob" id="blob"></div>
+        <div class="blur" id="blur"></div>
+        <div>
+            <video autoplay muted loop id="myVideo" style="
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.5;
+          ">
+            <source src="/asset/img/r1.mp4" type="video/mp4" >
+          </video>
+        </div>
+        <!-- <div class="main-image" id="main-image"></div> -->
+            <div class="home">
+                <h1 data-value="ESS - UOK" class="glitch big">ESS - UOK</h1>
+                <h3 data-value="Electronics Students' Society - University of Kelaniya" class="glitch small">Electronics Students' Society - University of Kelaniya</h3>
+            </div>
+        <!--===== Digital Dreams section =====-->
+        <br><br><br><br><br><br>
+        <section class="DD" id="DD">
+            <div class="dd__background">
+                <h1>Digital Dreams | 23</h1>
+            </div>
+        </section>
+        <!--===== About section =====-->
+        <section class="about" id="about">
+            <div class="card">
+                <div class="card-content">
+                    <!-- <h3>____________________________________________________</h3> -->
+                    <h1>About us</h1>
+                    <p>The Electronics Students' Society (ESS) is a formally structured student organization at the University of Kelaniya, attached to the Department of Physics & Electronics for the past 18 years. The goal of this organization is to provide students with a dynamic social environment while enhancing their soft skills and personalities through social activities and electronics-related projects.
+                    </p><p class="mobile_hide">
+                    Our mission is to provide students with opportunities to learn, grow, and excel in their academic and professional
+                    pursuits. We organize various academic and social events throughout the year, including guest lectures, workshops,
+                    seminars, and competitions, which are designed to enhance our members' knowledge, skills, and practical experience.
+                    </p><p class="mobile_hide">
+                    Our association is committed to promoting diversity, equity, and inclusion in all its activities and initiatives. We
+                    welcome students from diverse backgrounds and strive to create an inclusive and supportive community where everyone can
+                    thrive and succeed.
+                    </p>
+                    <p>
+                    Throughout its illustrious history, the society has successfully organized numerous professional events, including electronics workshops, industry visits, electronics-related exhibitions, and competitions. These events have played a crucial role in helping undergraduates enhance their knowledge and skills in the field.</p>
+                </div>
+            </div>
+        </section>
+        <!--===== Contact =====-->
+        <section class="Contact__Form about" id="contact">
+            <br><br><br>
+            <div class="card center">
+                <div class="card-content pad">
+                    <!-- <h3 class="color2">Contact</h3> -->
+                    <h1>Contact</h1>
+                    <div class="contact-wrap">
+                        <div class="form-wrapper">
+                            <div class="form-div">
+                                <form id="contact" name="contact" action="post" data-netlify="true" netlify>
+                                    <div class="input-wrap">
+                                        <input type="text" name="name" class="feedback-input" placeholder="Name *" maxlength="33"
+                                            required />
+                                        <input type="tel" name="phone" class="feedback-input" placeholder="Phone number *" maxlength="33"
+                                            required />
+                                    </div>
+                                    <input type="email" name="email" class="feedback-input" placeholder="Email *" maxlength="99" required />
+                                    <textarea name="message" class="feedback-input message" placeholder="Message *" maxlength="999"
+                                        required></textarea>
+                                    <div class="checkbox-wrap">
+                                        <input id="send-checkbox" type="checkbox" name="checkbox" class="checkbox" required />
+                                        <label class="captcha" for="send-checkbox">I'm a human *</label>
+                                    </div>
+                                    <button type="submit" class="send-button" onclick="if(!this.form.checkbox.checked){alert('Check the box to verify that you are a human');return false}">Let's go!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div> 
+        </section>
+        <!--==================== footer ====================-->
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo"> ESS UOK</h1>
+        
+                <h2>Contact</h2>
+        
+                <address>
+                    Department of Physics and Electronics, <br>Faculty of Science, <br>University of Kelaniya, <br>Sri
+                    Lanka, 11600.
+                </address>
+                <br>
+                <a class="footer__btn" href="mailto:">Email Us</a>
+            </div>
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Senior Treasurer</h2>
+        
+                    <ul class="nav__ul">
+                        <li>
+                            <a href=""><b> Dr. X. X. X. XXXX XXXXXXXX </b></a>
+                        </li>
+                        <span><a href="tel:">(+94) 112-XXX-XXX (ext: XXX)</a></span> <br>
+                        <a class="footer__btn" href="mailto:">Email</a>
+                    </ul>
+                </li>
+        
+                <li class="nav__item nav__item--extra">
+                    <h2 class="nav__title">Navigation</h2>
+        
+                    <ul class="nav__ul nav__ul--extra">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+        
+                    </ul>
+                </li>
+        
+                <li class="nav__item">
+                    <h2 class="nav__title">Legal</h2>
+        
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="legal">
+                <p>&copy; 2023 by DPE, FOS, UOK. All rights reserved.</p>
+        
+                <div class="legal__links">
+                    <span>Made with <span class="heart">♥</span> by <a href="https://deeghayu.netlify.app/" class="author">Deeghayu Adhikari</a></span>
+                </div>
+            </div>
+        </footer>
+
+     <!--===== js =====-->
+            <script>
+
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false,
+                includedLanguages:'en,si,ta',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+                }, 'google_translate_element');
+                }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+        <script src="/asset/js/timer.js"></script>
+        <script src="/asset/js/Soon.js"></script>
+        <script src="/asset/js/detect_browser.js"></script>
+</body>
+</html>

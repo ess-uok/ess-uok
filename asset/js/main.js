@@ -1,3 +1,4 @@
+/*=====  hero section blob animation =====*/
 const blob = document.getElementById("blob");
 
 document.body.onpointermove = event => {
@@ -8,7 +9,7 @@ document.body.onpointermove = event => {
         top: `${clientY}px`
     }, { duration: 3000, fill: "forwards"});
 };
-
+/*===== Word =====*/
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
@@ -37,3 +38,17 @@ document.querySelector('h1','h3').onmouseover = event => {
     iteration += 1 / 3;
   }, 30);
 };
+
+/*===== SHOW SCROLL TOP =====*/
+function scrollTop() {
+  const scrollTop = document.getElementById('scroll-top')
+  if (this.scrollY >= 500) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollTop)
+
+/*===== Loader =====*/
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}

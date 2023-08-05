@@ -9,6 +9,7 @@
     <meta name="keywords" content="ESS UOK">
     <link rel="icon" type="image/png" href="./asset/img/icon.png" />
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/loader.css">
     <link rel="stylesheet" href="./asset/css/index.css">
     <link rel="stylesheet" href="./asset/css/light-theme.css"
         media="(prefers-color-scheme:light), (prefers-color-scheme:no-preference)">
@@ -16,9 +17,16 @@
     <title>ESS UOK</title>
 
 </head>
-<body>
+<body onload="myFunction()">
+     <!--LOADER-->
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevrons-up scrolltop__icon'></i>
+    </a>
+    <!--===== Nav =====-->
     <nav role="navigation">
-    <div class="logo"></div>
+    
+    <a href="/index2.html"><div class="logo"></div></a>
         <div class="login-text">
            <p><a href="#">Sign-Up</a> | <a href="">Log-In</a></p>
         </div>
@@ -61,12 +69,60 @@
     
         <div class="blob" id="blob"></div>
         <div class="blur" id="blur"></div>
+        <div>
+            <video autoplay muted loop id="myVideo" style="
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.5;
+          ">
+            <source src="/asset/img/r2.mp4" type="video/mp4" >
+          </video>
+        </div>
         <!-- <div class="main-image" id="main-image"></div> -->
             <div class="home">
                 <h1 data-value="ESS - UOK " class="glitch big">Coming Soon</h1>
-                <h3 data-value="Electronics Students' Society - University of Kelaniya" class="glitch small">Electronics Students' Society - University of Kelaniya</h3>
+                <div class="launch-time glitch medium" id="demo">
+                    <div class="time-format">
+                        <span id="days">00</span>
+                        <span>Days</span>
+                    </div>
+                    <div class="time-format">
+                        <span id="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div class="time-format">
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="time-format">
+                        <span id="seconds">00</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
             </div>
 
-    <script src="./asset/js/soon.js"></script>
+     <!--===== js =====-->
+            <script>
+
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false,
+                includedLanguages:'en,si,ta',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+                }, 'google_translate_element');
+                }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+        <script src="/asset/js/detect_browser.js"></script>
+        <script src="/asset/js/timer.js"></script>
+        <script src="/asset/js/Soon.js"></script>
 </body>
 </html>
