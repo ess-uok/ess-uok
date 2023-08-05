@@ -1,0 +1,10 @@
+:root {
+    --bg-color: #f0f0f0;
+    --main-color: #0a0a0a;
+    --text-color: #272727;
+    --highlight-color: #970000;
+
+}
+.logo {
+    background-image: url(./../img/Black\ logo.png);
+}
