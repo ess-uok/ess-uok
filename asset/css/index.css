@@ -142,12 +142,13 @@ img {
 a{
     text-decoration: none;
 }
-
+html, body {
+    overflow-x:hidden 
+  } 
 body {
     font-family: 'Space Mono', monospace;
     background-color: var(--bg-color);
     margin: 0rem;
-    overflow-x: hidden !important; 
 }
 
 /* Home section */
