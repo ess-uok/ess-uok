@@ -30,7 +30,7 @@ if (result=="false")
 }
 else
 {
-   window.location = '/assets/browser_error/browser_error.html';
+   window.location = '/asset/browser_error/browser_error.html';
    this.remove();
 }
 
