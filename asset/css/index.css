@@ -988,13 +988,13 @@ textarea {
 @media screen and (max-width: 900px) {
 
     .mobile_hide{
-        display: none;
+        display: none !important;
     }
 }
 
 @media (max-width: 575.98px) {
     .HideOnMobile {
-        display: none;
+        display: none !important;
     }
 
     .ShowOnMobile {
