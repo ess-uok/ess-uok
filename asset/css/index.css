@@ -534,10 +534,10 @@ nav{
     text-align: left;
 }
 .dd__background p{
+    text-align: justify;
     font-size: 1rem;
     max-width: 70ch;
     color: var(--text-color);
-    text-align: left;
     padding: 0rem 2rem 0rem 0rem;
 }
 .dd__background p big{
@@ -606,7 +606,7 @@ nav{
         font-size: 1.25rem;
     }
     .dd__background {
-        height: 180vh;
+        height: 200vh;
     }
 }
 /* About Section */
