@@ -585,7 +585,7 @@ nav{
         height: 50vh;
     }
     #image-track {
-        top: 41%;
+        top: 42%;
     }
     .dd__background h1{
         font-size: 2rem;
@@ -607,7 +607,7 @@ nav{
         font-size: 1.25rem;
     }
     .dd__background {
-        height: 200vh;
+        height: 160vh;
     }
 }
 /* About Section */
