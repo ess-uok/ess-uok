@@ -594,6 +594,7 @@ nav{
     }
     .dd__background {
         height: 150vh;
+        padding-left: 2rem;
     }
 }
 @media screen and (max-width: 700px){
