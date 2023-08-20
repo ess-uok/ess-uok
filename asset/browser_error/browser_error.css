@@ -59,7 +59,7 @@ body {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: url("/assets/browser_error/bg.png");
+  background-image: url("/asset/browser_error/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60%;

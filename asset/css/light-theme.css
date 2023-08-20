@@ -8,6 +8,9 @@
 .logo {
     background-image: url(./../img/Black\ logo.png);
 }
+.banner-arrow {
+    background-image: url(/asset/img/arrow-black.png;
+}
 .heart {
     color: rgb(255, 0, 0);
 }

@@ -709,6 +709,146 @@ nav{
         font-size: 2.2rem;
     }
 }
+/* Activities section */
+#activities{
+    background-color:var(--bg-color);
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    place-items: center;
+}
+.banner {
+    border: 1px solid var(--highlight-color) !important;
+    aspect-ratio: 16/10;
+    cursor: pointer;
+    position: relative;
+    width: 60vw;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 900px){
+    .banner {
+        margin: 2rem 1rem;
+        width: 90vw;
+    }
+
+}
+  .banner:hover {
+    opacity: 1;
+  }
+  
+  .banner:hover:before,
+  .banner:hover .banner-content {
+    border-radius: 1rem;
+  }
+  
+  .banner:hover > .banner-content {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+
+  .banner-icon{
+    opacity: 0.7;
+    width: 200px;
+    transition: 0.3 ease;
+  }
+
+  @keyframes slide {
+    0% { opacity: .5; }
+    50% { transform: scale(1.1); opacity: 1; left: 20px; }
+    100% { transform: scale(1); opacity: .5;}
+  }
+
+  .banner:hover > .banner-icon{
+    opacity: 1;
+    animation: slide 2s infinite;
+  }
+  
+  .banner:hover > .banner-content > .banner-subtitle > .banner-subtitle-word {  
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0ms, transform 200ms cubic-bezier(.90, .06, .15, .90);
+  }
+  
+  .banner:before {
+    background: linear-gradient(
+      130deg, 
+      var(--bg-color) 0 34%, 
+      var(--highlight-color) 66%, 
+      var(--bg-color) 100%
+    );
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    height: 100%;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    transition: background-position 350ms ease, transform 350ms ease;
+    width: 100%;
+    z-index: 1;
+    background-image: url(/asset/img/dd/04.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    transition: .3s ease-in;
+  }
+  
+  .banner-content {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.2) 8%, 
+      transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin;
+    height: 100%;
+    padding: 5vmin;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    border-radius: 1rem;
+    transition: .3s ease;
+    opacity: 0.8;
+  }
+  
+  .banner-title,
+  .banner-subtitle {
+    color: black;
+    font-weight: 800;
+    margin: 0px;
+  }
+  
+  .banner-title {
+    font-size: 6vmin;
+  }
+  
+  .banner-subtitle {
+    font-size: 3vmin;
+    margin-top: 2vmin;
+  }
+  
+  .banner-subtitle-word {
+    display: inline-block;
+    margin: 0vmin 0.3vmin;
+    opacity: 0;
+    position: relative;  
+    transform: translateY(40%);
+    transition: none;
+  }
+  
+  .banner-icon {
+    bottom: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 7vmin;
+    left: 0px;
+    margin: 5vmin;
+    position: absolute;
+    transition: color 250ms ease;
+    z-index: 2;
+  }
+
 /*       Contact      */
 .contact-wrap {
     width: 100%;
@@ -858,6 +998,7 @@ textarea {
     }
     
 }
+
 
 /* footer */
 .footer {

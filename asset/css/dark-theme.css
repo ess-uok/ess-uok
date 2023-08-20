@@ -7,6 +7,9 @@
 .logo{
     background-image: url(./../img/White\ logo.png);
 }
+.banner-arrow {
+    background-image: url(/asset/img/arrow-white.png);
+}
 .heart {
     color: rgb(255, 152, 255);
 }
