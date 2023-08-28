@@ -262,7 +262,7 @@ body {
     border-radius: 50%;
     animation: rotate 20s infinite;
     background: linear-gradient(to right,
-            rgb(255, 79, 79),
+            rgb(0, 128, 255),
             var(--highlight-color));
 }
 
@@ -558,11 +558,11 @@ nav{
     background-color: red; 
     border-radius: .5rem; 
     padding: 0.5rem 2rem 0.5rem 0.5rem;
-    transition: 0.3s ease-in-out ;
+    transition: 0.2s ease-in-out ;
 }
 .dd__background p big:hover{
     background-color: var(--text-color); 
-    color: var(--highlight-color);
+    color: red;
 }
 .dd__background .dd__logo{
     margin: 0rem 4rem;
@@ -1129,7 +1129,6 @@ textarea {
 .mobile_show{
     display: none;
 }
-
 @media screen and (min-width: 24.375em) {
     .legal .legal__links {
         margin-left: auto;

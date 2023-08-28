@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="author" content="Deeghayu Adhikari">
+    <meta name="description" content="ESS UOK ">
+    <meta name="keywords" content="ESS UOK">
+    <link rel="icon" type="image/png" href="/asset/img/icon.png" />
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="/asset/css/loader.css">
+    <link rel="stylesheet" href="/asset/css/index.css">
+    <link rel="stylesheet" href="/asset/css/light-theme.css"
+        media="(prefers-color-scheme:light), (prefers-color-scheme:no-preference)">
+    <link rel="stylesheet" href="/asset/css/dark-theme.css" media="(prefers-color-scheme:dark)">
+    <script src="https://kit.fontawesome.com/7f707d79d5.js" crossorigin="anonymous"></script>
+    <title>ESS UOK</title>
+
+</head>
+<body onload="myFunction()" >
+    <!--LOADER-->
+    <div class="loader__wrapper" id="loader">
+        <div class="loader">
+            <h2 style="
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 140vh;
+                        ">loading</h2>
+            <div class="gooey">
+                <span class="dot"></span>
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevrons-up scrolltop__icon'></i>
+    </a>
+    <!--===== Nav =====-->
+    <nav role="navigation">
+    <div class="logo"></div>
+        <div class="login-text">
+           <p><a href="#">Sign-Up</a> | <a href="">Log-In</a></p>
+        </div>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <hr>
+                <div id="google_translate_element"></div>
+                <hr>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Activities</li>
+                </a>
+                <a href="#">
+                    <li>Events</li>
+                </a>
+                <a href="#">
+                    <li>Resources</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <hr>
+                <a href="#">
+                    <li>Sign-Up</li>
+                </a>
+                <a href="#">
+                    <li>Log-In</li>
+                </a>
+                <hr>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+
+        <!--==================== footer ====================-->
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo"> ESS UOK</h1>
+        
+                <h2>Contact</h2>
+        
+                <address>
+                    Department of Physics and Electronics, <br>Faculty of Science, <br>University of Kelaniya, <br>Sri
+                    Lanka, 11600.
+                </address>
+                <br>
+                <a class="footer__btn" href="mailto:electronics.students.society.uok@gmail.com?subject=Mail%20from%20Website">Email Us</a>
+            </div>
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Senior Treasurer</h2>
+        
+                    <ul class="nav__ul">
+                        <li>
+                            <a href=""><b> Professor A. L. A. K. Ranaweera </b></a>
+                        </li>
+                        <span><a href="tel:">(+94) 777-179-201</a></span> <br>
+                        <a class="footer__btn" href="mailto:arunaran@kln.ac.lk?subject=Mail%20from%20Website">Email</a>
+                    </ul>
+                </li>
+        
+                <li class="nav__item nav__item--extra">
+                    <h2 class="nav__title">Navigation</h2>
+        
+                    <ul class="nav__ul nav__ul--extra">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+        
+                    </ul>
+                </li>
+        
+                <li class="nav__item">
+                    <h2 class="nav__title">Legal</h2>
+        
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="legal">
+                <p>&copy; 2023 by DPE, FOS, UOK. All rights reserved.</p>
+        
+                <div class="legal__links">
+                    <span>Made with <span class="heart">♥</span> by <a href="https://deeghayu.netlify.app/" class="author">Deeghayu Adhikari</a></span>
+                </div>
+                
+            </div>
+        </footer>
+
+     <!--===== js =====-->
+        <script>
+
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false,
+                includedLanguages:'en,si,ta',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+                }, 'google_translate_element');
+                }
+        </script>
+        <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+        <script src="/asset/js/timer.js"></script>
+        <script src="/asset/js/Soon.js"></script>
+        <script src="/asset/js/detect_browser.js"></script>
+        <script src="/asset/js/loader.js"></script>
+        <script src="/asset/js/image_slider.js"></script>
+        <script src="/asset/js/main.js"></script>
+</body>
+</html>
