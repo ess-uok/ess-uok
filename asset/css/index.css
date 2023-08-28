@@ -642,6 +642,10 @@ nav{
     margin: 0rem;
     overflow: hidden;
 }
+.highlight_color{
+    color: var(--highlight-color) !important;
+    text-shadow: 0 0 2px #000000, 0 0 4px #0000FF;
+}
 
 
 .card {
