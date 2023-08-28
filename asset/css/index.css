@@ -151,7 +151,7 @@ body {
     margin: 0rem;
 }
 hr{
-    color: var(--bg-color) !important;
+    border: 1px solid var(--bg-color);
 }
 
 /* Home section */
