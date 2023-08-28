@@ -150,6 +150,9 @@ body {
     background-color: var(--bg-color);
     margin: 0rem;
 }
+hr{
+    border: 1px solid var(--bg-color);
+}
 
 /* Home section */
 
@@ -262,7 +265,7 @@ body {
     border-radius: 50%;
     animation: rotate 20s infinite;
     background: linear-gradient(to right,
-            rgb(255, 79, 79),
+            rgb(0, 128, 255),
             var(--highlight-color));
 }
 
@@ -391,7 +394,7 @@ nav{
 }
 
 #menuToggle a:hover {
-    color: var(--highlight-color);
+    color: var(--text-color);
 }
 
 
@@ -465,7 +468,7 @@ nav{
     padding: 50px;
     padding-top: 125px;
 
-    background: var(--text-color);
+    background: var(--highlight-color);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -509,7 +512,7 @@ nav{
 
 .dd__background {
     height: max-content;
-    width: 100vw;
+    width: 100%;
     background-color: var(--bg-color);
     padding: 4rem 0;
     padding-left: 6rem;
@@ -533,6 +536,20 @@ nav{
     color: var(--text-color);
     text-align: left;
 }
+ .robot_img_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+ }
+ .robot_img{
+    width: 90vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+}
 .dd__background p{
     text-align: justify;
     font-size: 1rem;
@@ -544,11 +561,11 @@ nav{
     background-color: red; 
     border-radius: .5rem; 
     padding: 0.5rem 2rem 0.5rem 0.5rem;
-    transition: 0.3s ease-in-out ;
+    transition: 0.2s ease-in-out ;
 }
 .dd__background p big:hover{
     background-color: var(--text-color); 
-    color: var(--highlight-color);
+    color: red;
 }
 .dd__background .dd__logo{
     margin: 0rem 4rem;
@@ -586,16 +603,31 @@ nav{
     #image-track {
         top: 42%;
     }
+    .dd__background{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
     .dd__background h1{
         font-size: 2rem;
+        margin-left: 2rem;
+        max-width: max-content;
     }
     .dd__background p{
-        max-width: 60ch;
+        max-width: fit-content;
+        margin-bottom: 0;
     }
     .dd__background {
-        height: 150vh;
         padding-left: 2rem;
     }
+    .header__container_dd{
+        justify-content: center;
+        align-items: auto;
+    }
+    
 }
 @media screen and (max-width: 700px){
     #image-track {
@@ -605,9 +637,6 @@ nav{
     .dd__background h1{
         font-size: 1.25rem;
     }
-    .dd__background {
-        height: 200vh;
-    }
 }
 /* About Section */
 .about {
@@ -615,6 +644,10 @@ nav{
     place-items: center;
     margin: 0rem;
     overflow: hidden;
+}
+.highlight_color{
+    color: var(--highlight-color) !important;
+    text-shadow: 0 0 2px #000000, 0 0 4px #0000FF;
 }
 
 
@@ -1100,7 +1133,9 @@ textarea {
     display: flex;
     align-items: center;
 }
-
+.mobile_show{
+    display: none;
+}
 @media screen and (min-width: 24.375em) {
     .legal .legal__links {
         margin-left: auto;
@@ -1133,6 +1168,9 @@ textarea {
 
     .mobile_hide{
         display: none !important;
+    }
+    .mobile_show{
+        display: initial;
     }
 }
 
