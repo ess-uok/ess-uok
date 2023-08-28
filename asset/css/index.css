@@ -150,6 +150,9 @@ body {
     background-color: var(--bg-color);
     margin: 0rem;
 }
+hr{
+    color: var(--bg-color) !important;
+}
 
 /* Home section */
 
@@ -391,7 +394,7 @@ nav{
 }
 
 #menuToggle a:hover {
-    color: var(--highlight-color);
+    color: var(--text-color);
 }
 
 
@@ -465,7 +468,7 @@ nav{
     padding: 50px;
     padding-top: 125px;
 
-    background: var(--text-color);
+    background: var(--highlight-color);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
