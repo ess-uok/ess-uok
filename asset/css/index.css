@@ -509,7 +509,7 @@ nav{
 
 .dd__background {
     height: max-content;
-    width: 100vw;
+    width: 100%;
     background-color: var(--bg-color);
     padding: 4rem 0;
     padding-left: 6rem;
@@ -532,6 +532,20 @@ nav{
     font-size: 4rem;
     color: var(--text-color);
     text-align: left;
+}
+ .robot_img_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+ }
+ .robot_img{
+    width: 90vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
 }
 .dd__background p{
     text-align: justify;
@@ -586,16 +600,31 @@ nav{
     #image-track {
         top: 42%;
     }
+    .dd__background{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
     .dd__background h1{
         font-size: 2rem;
+        margin-left: 2rem;
+        max-width: max-content;
     }
     .dd__background p{
-        max-width: 60ch;
+        max-width: fit-content;
+        margin-bottom: 0;
     }
     .dd__background {
-        height: 150vh;
         padding-left: 2rem;
     }
+    .header__container_dd{
+        justify-content: center;
+        align-items: auto;
+    }
+    
 }
 @media screen and (max-width: 700px){
     #image-track {
@@ -604,9 +633,6 @@ nav{
     
     .dd__background h1{
         font-size: 1.25rem;
-    }
-    .dd__background {
-        height: 200vh;
     }
 }
 /* About Section */
@@ -1100,6 +1126,9 @@ textarea {
     display: flex;
     align-items: center;
 }
+.mobile_show{
+    display: none;
+}
 
 @media screen and (min-width: 24.375em) {
     .legal .legal__links {
@@ -1133,6 +1162,9 @@ textarea {
 
     .mobile_hide{
         display: none !important;
+    }
+    .mobile_show{
+        display: initial;
     }
 }
 
