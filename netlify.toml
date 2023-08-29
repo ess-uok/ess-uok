@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/"
-to = "/store-closed"
+to = "/browser_error/browser_error"
 status = 404
