@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="./asset/css/light-theme.css"
         media="(prefers-color-scheme:light), (prefers-color-scheme:no-preference)">
     <link rel="stylesheet" href="./asset/css/dark-theme.css" media="(prefers-color-scheme:dark)">
+    <script src="https://kit.fontawesome.com/7f707d79d5.js" crossorigin="anonymous"></script>
     <title>ESS UOK</title>
 
 </head>
-<body onload="myFunction()" style="overflow: hidden;">
-     <!--LOADER-->
-     <div class="loader__wrapper" id="loader">
+<body onload="myFunction()" >
+    <!--LOADER-->
+    <div class="loader__wrapper" id="loader">
         <div class="loader">
-            <h2 style="color: white;
+            <h2 style="
             text-transform: uppercase;
             font-size: 2rem;
             font-weight: 700;
@@ -48,10 +49,9 @@
     </a>
     <!--===== Nav =====-->
     <nav role="navigation">
-    
-    <a href="/index2.html"><div class="logo"></div></a>
+    <div class="logo"></div>
         <div class="login-text">
-           <p><a href="#">Sign-Up</a> | <a href="">Log-In</a></p>
+           <p><a href="/404">Sign-Up</a> | <a href="/404">Log-In</a></p>
         </div>
         <div id="menuToggle">
             <input type="checkbox" />
@@ -60,29 +60,31 @@
             <span></span>
             <ul id="menu">
                 <hr>
+                <div id="google_translate_element"></div>
+                <hr>
                 <a href="#">
                     <li>Home</li>
                 </a>
-                <a href="#">
+                <a href="#about">
                     <li>About Us</li>
                 </a>
-                <a href="#">
+                <a href="#activities">
                     <li>Activities</li>
                 </a>
-                <a href="#">
+                <a href="#DD">
                     <li>Events</li>
                 </a>
-                <a href="#">
+                <a href="/404">
                     <li>Resources</li>
                 </a>
-                <a href="#">
+                <a href="#contact">
                     <li>Contact</li>
                 </a>
                 <hr>
-                <a href="#">
+                <a href="/404">
                     <li>Sign-Up</li>
                 </a>
-                <a href="#">
+                <a href="/404">
                     <li>Log-In</li>
                 </a>
                 <hr>
@@ -90,8 +92,7 @@
         </div>
     </nav>
     
-    <main id="main">
-        <div class="blob" id="blob"></div>
+        <div class="blob HideOnMobile" id="blob"></div>
         <div class="blur" id="blur"></div>
         <div>
             <video autoplay muted loop id="Video" style="
@@ -105,37 +106,245 @@
             bottom: 0;
             z-index: -1;
             opacity: 0.5;
-            filter: blur(10px);
+            filter: blur(6px);
           ">
-            <source src="/asset/img/bg.mp4" type="video/mp4" >
+            <source src="/asset/img/r1.mp4" type="video/mp4" >
           </video>
         </div>
         <!-- <div class="main-image" id="main-image"></div> -->
             <div class="home">
-                <h1 data-value="ESS - UOK " class="glitch big">Coming Soon</h1>
-                <div class="launch-time glitch medium" id="demo">
-                    <div class="time-format">
-                        <span id="days">00</span>
-                        <span>Days</span>
+                <h1 data-value="ESS - UOK" class="glitch big">ESS - UOK</h1>
+                <h3 data-value="Electronics Students' Society - University of Kelaniya" class="glitch small">Electronics Students' Society - University of Kelaniya</h3>
+                <div class="scroll-downs">
+                    <div class="mousey">
+                        <div class="scroller"></div>
                     </div>
-                    <div class="time-format">
-                        <span id="hours">00</span>
-                        <span>Hours</span>
                     </div>
-                    <div class="time-format">
-                        <span id="minutes">00</span>
-                        <span>Minutes</span>
+            </div>
+        <!--===== Digital Dreams section =====-->
+        <br><br><br><br><br><br>
+        <section class="DD" id="DD">
+            <div class="dd__background">
+                <div class="header__container_dd">
+                    <h1>Digital Dreams</h1>
+                <img class="dd__logo" src="/asset/img//dd/dd_logo.jpg" alt="Digital Dreams 23 logo">
+                </div>
+                <div class="dd__ux mobile_hide">
+                    <div class="arrow">
+                        <i class="fa-solid fa-arrow-left fa-2xl"></i>
                     </div>
-                    <div class="time-format">
-                        <span id="seconds">00</span>
-                        <span>Seconds</span>
+                    <div class="dd__ux__text">
+                        <p style="text-transform: uppercase; padding: 0 2rem; font-weight: 600;">Drag the image to view more</p>
                     </div>
                 </div>
+                <p> <br>
+                    <a href="/asset/DD/dd.html"><b><big>Registration Link</big></b></a><br><br>
+                    <b>The Ultimate Robotic Competition!</b>
+                    <br>
+                    The Electronics Students' Society at the University of Kelaniya is thrilled to present its flagship event, Digital Dreams 23, an exhilarating robotics competition that pushes the boundaries of innovation and technology. Get ready to witness a symphony of metal and circuits as talented minds from across the nation come together to showcase their cutting-edge creations and battle for supremacy.
+                    <br>
+                    <br> <b> About Digital Dreams 23:</b> <br>
+                    Digital Dreams 23 is not just any competition; it's a celebration of intellect and ingenuity, where technology meets creativity. As the premier event organized by the Electronics Students' Society, it serves as a platform for budding engineers and robotics enthusiasts to unleash their potential and demonstrate their robotic marvels.
+                
+                </p>
+                <p class="mobile_hide"> 
+                    <br>
+                    <b> The Robotic Extravaganza:</b>
+                     <br>
+                    Imagine a thrilling spectacle where robots come to life, performing tasks, overcoming challenges, and dazzling the audience with their agility and intelligence. With various categories ranging from autonomous drones to humanoid robots, participants will compete in an array of challenges designed to test their robots' abilities to navigate through complex mazes, solve intricate puzzles, and engage in enthralling head-to-head battles.
+                    <br>
+                    <br> <b>A Platform for Innovation: </b>
+                     <br>
+                    Digital Dreams 23 is not just a competition; it's a breeding ground for innovation. Participants will have the opportunity to showcase their groundbreaking designs and exchange knowledge with like-minded individuals, fostering a culture of collaboration and technological advancement.
+                    <br>
+                    <br> <b> Who Can Participate?</b>
+                    <br>
+                    Whether you're a seasoned roboticist or a novice in the field of electronics, Digital Dreams 23 welcomes all passionate individuals with a thirst for knowledge and a love for robotics. The event encourages students from various educational backgrounds to come together and push the boundaries of what is possible in the world of robotics.
+                    <br>
+                    <br> <b>  Inspire and Be Inspired:</b>
+                   <br>
+                    Digital Dreams 23 is not only a chance for participants to showcase their talents but also a chance for visitors to be inspired by the wonders of robotics. The event offers a glimpse into the future, where artificial intelligence, automation, and innovation will revolutionize the way we live and interact with the world.
+        
+                </p>
+                <p>
+                    <br>
+                     <b> Join Us:</b>
+                    <br>
+                    So, mark your calendars and make your way to Digital Dreams 23. Witness the future unfold as robots take center stage, and technology becomes art in the hands of these brilliant young minds. Join us for an unforgettable experience of excitement, creativity, and the awe-inspiring world of robotics.
+                    <br>
+                    <br> 
+                </p>
+                <p class="highlight_color">
+                    <b> Are you ready to be part of this thrilling adventure? See you at Digital Dreams 23, the ultimate robotic competition!</b>
+                    
+                </p>
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" class="mobile_hide">
+                    <img class="image" id="count" src="/asset/img/dd/00.jpg" draggable="false" />
+                    <img class="image" id="count" src="/asset/img/dd/01.jpg" draggable="false" />
+                    <img class="image" id="count" src="/asset/img/dd/02.jpg" draggable="false" />
+                    <img class="image" id="count" src="/asset/img/dd/03.jpg" draggable="false" />
+                    <img class="image" id="count" src="/asset/img/dd/04.jpg" draggable="false" />
+                    <img class="image" id="count" src="/asset/img/dd/05.jpg" draggable="false" />
+                    
+                </div>
+                
             </div>
+            <div class="robot_img_wrapper">
+                <img src="./asset/img/dd/03.jpg" alt="Mobile View - Robot Image" class="mobile_show robot_img">
+            </div>
+        </section>
+        <!--===== About section =====-->
+        <section class="about" id="about">
+            <div class="card">
+                <div class="card-content">
+                    <!-- <h3>____________________________________________________</h3> -->
+                    <h1>About us</h1>
+                    <p>The Electronics Students' Society (ESS) is a formally structured student organization at the University of Kelaniya, attached to the Department of Physics & Electronics for the past 18 years. The goal of this organization is to provide students with a dynamic social environment while enhancing their soft skills and personalities through social activities and electronics-related projects.
+                    </p><p class="mobile_hide">
+                    Our mission is to provide students with opportunities to learn, grow, and excel in their academic and professional
+                    pursuits. We organize various academic and social events throughout the year, including guest lectures, workshops,
+                    seminars, and competitions, which are designed to enhance our members' knowledge, skills, and practical experience.
+                    </p><p class="mobile_hide">
+                    Our association is committed to promoting diversity, equity, and inclusion in all its activities and initiatives. We
+                    welcome students from diverse backgrounds and strive to create an inclusive and supportive community where everyone can
+                    thrive and succeed.
+                    </p>
+                    <p>
+                    Throughout its illustrious history, the society has successfully organized numerous professional events, including electronics workshops, industry visits, electronics-related exhibitions, and competitions. These events have played a crucial role in helping undergraduates enhance their knowledge and skills in the field.</p>
+                </div>
+            </div>
+        </section>
+        <!--===== Activities section =====-->
+        <section id="activities">
+            <a href="/asset/pages/activity.html">
+                <div class="banner">
+                    <div class="banner-content">
+                      <h3 class="banner-title">Activities</h3>
+                      <h4 class="banner-subtitle"></h4>
+                    </div>
+                    <div class="banner-icon"></div>
+                    <img src="/asset/img/arrow-black.png" alt="arrow Image" class="banner-icon">
+                  </div>
+            </a>     
+        </section>
+        <!--===== Contact =====-->
+        <section class="Contact__Form about" id="contact">
+            <div class="card center">
+                <div class="card-content pad">
+                    <!-- <h3 class="color2">Contact</h3> -->
+                    <h1>Contact</h1>
+                    <div class="contact-wrap">
+                        <div class="form-wrapper">
+                            <div class="form-div">
+                                <form id="contact" name="contact" action="" data-netlify="true" netlify>
+                                    <div class="input-wrap">
+                                        <input type="text" name="name" class="feedback-input" placeholder="Name *" maxlength="33"
+                                            required />
+                                        <input type="tel" name="phone" class="feedback-input" placeholder="Phone number *" maxlength="33"
+                                            required />
+                                    </div>
+                                    <input type="email" name="email" class="feedback-input" placeholder="Email *" maxlength="99" required />
+                                    <textarea name="message" class="feedback-input message" placeholder="Message *" maxlength="999"
+                                        required></textarea>
+                                    <div class="checkbox-wrap">
+                                        <input id="send-checkbox" type="checkbox" name="checkbox" class="checkbox" required />
+                                        <label class="captcha" for="send-checkbox">I'm a human *</label>
+                                    </div>
+                                    <button type="submit" class="send-button" onclick="if(!this.form.checkbox.checked){alert('Check the box to verify that you are a human');return false}">Let's go!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
 
-    </main>
+                </div>
+            </div> 
+        </section>
+        <!--==================== footer ====================-->
+        <footer class="footer">
+            <div class="footer__addr">
+                <h1 class="footer__logo"> ESS UOK</h1>
+        
+                <h2>Contact</h2>
+        
+                <address>
+                    Department of Physics and Electronics, <br>Faculty of Science, <br>University of Kelaniya, <br>Sri
+                    Lanka, 11600.
+                </address>
+                <br>
+                <a class="footer__btn" href="mailto:electronics.students.society.uok@gmail.com?subject=Mail%20from%20Website">Email Us</a>
+            </div>
+            <ul class="footer__nav">
+                <li class="nav__item">
+                    <h2 class="nav__title">Senior Treasurer</h2>
+        
+                    <ul class="nav__ul">
+                        <li>
+                            <a href=""><b> Professor A. L. A. K. Ranaweera </b></a>
+                        </li>
+                        <span><a href="tel:">(+94) 777-179-201</a></span> <br>
+                        <a class="footer__btn" href="mailto:arunaran@kln.ac.lk?subject=Mail%20from%20Website">Email</a>
+                    </ul>
+                </li>
+        
+                <li class="nav__item nav__item--extra">
+                    <h2 class="nav__title">Navigation</h2>
+        
+                    <ul class="nav__ul nav__ul--extra">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+        
+                    </ul>
+                </li>
+        
+                <li class="nav__item">
+                    <h2 class="nav__title">Legal</h2>
+        
+                    <ul class="nav__ul">
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="legal">
+                <p>&copy; 2023 by DPE, FOS, UOK. All rights reserved.</p>
+        
+                <div class="legal__links">
+                    <span>Made with <span class="heart">♥</span> by <a href="https://deeghayu.netlify.app/" class="author">Deeghayu Adhikari</a></span>
+                </div>
+                
+            </div>
+        </footer>
+
      <!--===== js =====-->
-            <script>
+        <script>
 
                 function googleTranslateElementInit() {
                 new google.translate.TranslateElement({
@@ -145,13 +354,13 @@
                 layout: google.translate.TranslateElement.InlineLayout.VERTICAL
                 }, 'google_translate_element');
                 }
-            </script>
-            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-        <script src="/asset/js/detect_browser.js"></script>
+        </script>
+        <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
         <script src="/asset/js/timer.js"></script>
         <script src="/asset/js/Soon.js"></script>
-        <script src="/asset/js/main.js"></script>
+        <script src="/asset/js/detect_browser.js"></script>
         <script src="/asset/js/loader.js"></script>
-        
+        <script src="/asset/js/image_slider.js"></script>
+        <script src="/asset/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="author" content="Deeghayu Adhikari">
+    <meta name="description" content="ESS UOK ">
+    <meta name="keywords" content="ESS UOK">
+    <link rel="icon" type="image/png" href="./asset/img/icon.png" />
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/loader.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/css/light-theme.css"
+        media="(prefers-color-scheme:light), (prefers-color-scheme:no-preference)">
+    <link rel="stylesheet" href="./asset/css/dark-theme.css" media="(prefers-color-scheme:dark)">
+    <title>ESS UOK</title>
+
+</head>
+<body onload="myFunction()" style="overflow: hidden;">
+     <!--LOADER-->
+     <div class="loader__wrapper" id="loader">
+        <div class="loader">
+            <h2 style="color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 0.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 140vh;
+                        ">loading</h2>
+            <div class="gooey">
+                <span class="dot"></span>
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-chevrons-up scrolltop__icon'></i>
+    </a>
+    <!--===== Nav =====-->
+    <nav role="navigation">
+    
+    <a href="/index2.html"><div class="logo"></div></a>
+        <div class="login-text">
+           <p><a href="#">Sign-Up</a> | <a href="">Log-In</a></p>
+        </div>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <hr>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Activities</li>
+                </a>
+                <a href="#">
+                    <li>Events</li>
+                </a>
+                <a href="#">
+                    <li>Resources</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <hr>
+                <a href="#">
+                    <li>Sign-Up</li>
+                </a>
+                <a href="#">
+                    <li>Log-In</li>
+                </a>
+                <hr>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main">
+        <div class="blob" id="blob"></div>
+        <div class="blur" id="blur"></div>
+        <div>
+            <video autoplay muted loop id="Video" style="
+            width: 110vw;
+            height: 110vh;
+            object-fit: cover;
+            position: absolute;
+            left: -5vw;
+            right: 0;
+            top: -5vh;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.5;
+            filter: blur(10px);
+          ">
+            <source src="/asset/img/bg.mp4" type="video/mp4" >
+          </video>
+        </div>
+        <!-- <div class="main-image" id="main-image"></div> -->
+            <div class="home">
+                <h1 data-value="ESS - UOK " class="glitch big">Coming Soon</h1>
+                <div class="launch-time glitch medium" id="demo">
+                    <div class="time-format">
+                        <span id="days">00</span>
+                        <span>Days</span>
+                    </div>
+                    <div class="time-format">
+                        <span id="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div class="time-format">
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="time-format">
+                        <span id="seconds">00</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+     <!--===== js =====-->
+            <script>
+
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false,
+                includedLanguages:'en,si,ta',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+                }, 'google_translate_element');
+                }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+        <script src="/asset/js/detect_browser.js"></script>
+        <script src="/asset/js/timer.js"></script>
+        <script src="/asset/js/Soon.js"></script>
+        <script src="/asset/js/main.js"></script>
+        <script src="/asset/js/loader.js"></script>
+        
+</body>
+</html>
