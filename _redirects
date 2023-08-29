@@ -1,12 +1,5 @@
 # / /redirected url
-# Redirect with a 301
-/index        /              301
 
-# Redirect with a 302
-/my-redirect  /              302
 
 # Show a custom 404 for this path
 /  /asset/404/404  404
- 
-# Rewrite a path
-/pass-through /index.html    200
