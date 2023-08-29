@@ -45,6 +45,13 @@
             parseInt(ua.substring(edge + 5, ua.indexOf(".", edge)), 10)
           );
         }
+        var chrome = ua.indexOf("chrome/");
+        if (edge > 0) {
+          return (
+            "Chrome " +
+            parseInt(ua.substring(isChromium + 5, ua.indexOf(".", isChromium)), 10)
+          );
+        }
 
         // other browser
         return "false";
