@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul li {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+$white: #FFFFFF;
+$red: #D03A3A;
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: $white;
+
+    span {
+        color: $red;
+    }
+
+    margin-inline: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: $white;
+}
+
+
+a.cta-btn,
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+    text-decoration: none;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+section,
+.container {
+    position: relative;
+    width: 100%;
+
+}
+
+section {
+    width: 100vw;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow: hidden;
+    filter: grayscale(100);
+    transition: filter 1s;
+    padding-bottom: 50px;
+
+    &:hover {
+        filter: grayscale(0);
+    }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.container {
+    max-width: 1220px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    height: 100%;
+}
+
+@media screen and (max-width:768px) {
+    section {
+        width: 100vw;
+        min-height: auto;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        overflow: hidden;
+        transition: filter 1s;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-inline: 20px;
+        filter: grayscale(0);
+    }
+
+    h1 {
+        font-size: 41px;
+
+        span {
+            color: $red;
+        }
+
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+    }
+}

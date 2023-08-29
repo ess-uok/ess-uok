@@ -1,0 +1,11 @@
+Model Information:
+* title:	robo
+* source:	https://sketchfab.com/3d-models/robo-d70822beb71742cd9208183f32e8e3c9
+* author:	Rogerio Freitas (https://sketchfab.com/f_rogerio_freitas)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "robo" (https://sketchfab.com/3d-models/robo-d70822beb71742cd9208183f32e8e3c9) by Rogerio Freitas (https://sketchfab.com/f_rogerio_freitas) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

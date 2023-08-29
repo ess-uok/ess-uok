@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Dreams</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/></head>
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="./images/logo.png" alt="" class="logo">
+            <div class="menutoggle" onclick="togglemenu();"></div>
+            <div class="links">
+                <a href="/index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#event">Events</a>
+                <a href="#workshop">Workshops</a>
+                <a href="#merch">Merch</a>
+            </div>
+        </div>
+    </header>
+    <a href="https://wa.me/94762600331" target=”_blank” class="whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    <section class="top" id="home">
+        <div class="container">
+            <h1>Digital <span>Dreams</span> `23</h1>
+            <p>
+                "The future of technology is in your hands. Join with us and explore your passion in electronics."
+            </p>
+            <a href="#" class="cta-btn" style="text-align: center;">Registration from 03.09.23 </a>
+            
+        <canvas id="c"></canvas>
+        </div>
+        <div class="mouse_scroll">
+
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+            </div>
+    </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h1>About <span>Us</span></h1>
+            <div class="flex">
+                <img src="./images/landing-back.png" alt="">
+                <div>
+                    <p>
+                        Robot Battle & Electronic based exhibition is organised by Electronics Students' Society, University of Kelaniya to enhance the relationship between our young innovators and the industry. This will be an expansive platform to launch new ideas and skills related to electronics
+                    </p>
+                    <p>
+                        Digital Dreams was initially commenced in the year of 2013 and in 2023, we are to introduce a tournament of Robot Battle with the intention of making Digital Dreams the most outstanding electronics-based event.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2" id="event">
+        
+        <div id="container3D"></div>
+        <div class="container">
+            <h1>Register for <span>Competitions</span></h1>
+            <div class="grid-sec">
+                <div class="grid-item">
+                    <svg width="36" height="41" viewBox="0 0 36 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0520231 40.1098V29.237C0.0520231 27.8424 0.521966 26.67 1.46185 25.7199C2.40173 24.7698 3.56185 24.2948 4.9422 24.2948H31.0578C32.4525 24.2948 33.6248 24.7698 34.5749 25.7199C35.525 26.67 36 27.8424 36 29.237V40.1098H0.0520231ZM11.0899 22.2139C8.0319 22.2139 5.41908 21.1378 3.25145 18.9857C1.08381 16.8336 0 14.2151 0 11.1302C0 8.04532 1.08381 5.41908 3.25145 3.25145C5.41908 1.08381 8.0319 0 11.0899 0H24.8671C27.9655 0 30.5957 1.07965 32.7574 3.23896C34.9191 5.39823 36 8.0254 36 11.1205C36 14.2155 34.9191 16.8382 32.7574 18.9884C30.5957 21.1387 27.9655 22.2139 24.8671 22.2139H11.0899ZM4.57803 35.5838H31.474V28.8208H4.57803V35.5838ZM11.0809 17.6879H24.8671C26.7023 17.6879 28.2623 17.0506 29.5469 15.776C30.8316 14.5014 31.474 12.9538 31.474 11.1329C31.474 9.31214 30.8316 7.75578 29.5469 6.46387C28.2623 5.17197 26.7023 4.52601 24.8671 4.52601H11.0809C9.26012 4.52601 7.71243 5.16687 6.43786 6.44858C5.16329 7.73029 4.52601 9.28665 4.52601 11.1177C4.52601 12.9487 5.16329 14.5014 6.43786 15.776C7.71243 17.0506 9.26012 17.6879 11.0809 17.6879ZM11.09 13.3699C11.7429 13.3699 12.2861 13.1486 12.7197 12.706C13.1532 12.2633 13.3699 11.7344 13.3699 11.1193C13.3699 10.5041 13.1501 9.9711 12.7105 9.52023C12.2709 9.06936 11.7333 8.84393 11.0978 8.84393C10.4623 8.84393 9.92775 9.06876 9.49422 9.51841C9.06069 9.96806 8.84393 10.5056 8.84393 11.1311C8.84393 11.7566 9.06482 12.2861 9.5066 12.7197C9.94838 13.1532 10.4762 13.3699 11.09 13.3699ZM24.8807 13.3699C25.4959 13.3699 26.0289 13.1486 26.4798 12.706C26.9306 12.2633 27.1561 11.7344 27.1561 11.1193C27.1561 10.5041 26.9312 9.9711 26.4816 9.52023C26.0319 9.06936 25.4944 8.84393 24.8689 8.84393C24.2434 8.84393 23.7139 9.06876 23.2803 9.51841C22.8468 9.96806 22.6301 10.5056 22.6301 11.1311C22.6301 11.7566 22.8514 12.2861 23.294 12.7197C23.7367 13.1532 24.2656 13.3699 24.8807 13.3699Z" fill="#D03A3A"/>
+                        </svg>
+                    <h3>Robo Battle (Open)</h3> 
+                    <p>
+                        Register with the Robotic Battle in the open category(for universities, companies and other)
+                    </p> 
+                    <a href="#" class="cta-btn">Register Now</a>  
+                    <a href="#" class="cta-btn">
+                        Delegates Book
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 15.95L6.53646 10.225L8.30729 8.57501L11.276 11.425V3.35001H13.724V11.425L16.6927 8.57501L18.4635 10.225L12.5 15.95ZM5.96354 20.625C5.28559 20.625 4.70812 20.396 4.23112 19.9381C3.75412 19.4802 3.51562 18.9258 3.51562 18.275V14.7H5.96354V18.275H19.0365V14.7H21.5104V18.275C21.5104 18.925 21.2694 19.4792 20.7873 19.9375C20.3052 20.3958 19.7216 20.625 19.0365 20.625H5.96354Z" fill="white"/>
+                            </svg>                            
+                    </a>                    
+                </div>
+                <div class="grid-item">
+                    <svg width="36" height="41" viewBox="0 0 36 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0520231 40.1098V29.237C0.0520231 27.8424 0.521966 26.67 1.46185 25.7199C2.40173 24.7698 3.56185 24.2948 4.9422 24.2948H31.0578C32.4525 24.2948 33.6248 24.7698 34.5749 25.7199C35.525 26.67 36 27.8424 36 29.237V40.1098H0.0520231ZM11.0899 22.2139C8.0319 22.2139 5.41908 21.1378 3.25145 18.9857C1.08381 16.8336 0 14.2151 0 11.1302C0 8.04532 1.08381 5.41908 3.25145 3.25145C5.41908 1.08381 8.0319 0 11.0899 0H24.8671C27.9655 0 30.5957 1.07965 32.7574 3.23896C34.9191 5.39823 36 8.0254 36 11.1205C36 14.2155 34.9191 16.8382 32.7574 18.9884C30.5957 21.1387 27.9655 22.2139 24.8671 22.2139H11.0899ZM4.57803 35.5838H31.474V28.8208H4.57803V35.5838ZM11.0809 17.6879H24.8671C26.7023 17.6879 28.2623 17.0506 29.5469 15.776C30.8316 14.5014 31.474 12.9538 31.474 11.1329C31.474 9.31214 30.8316 7.75578 29.5469 6.46387C28.2623 5.17197 26.7023 4.52601 24.8671 4.52601H11.0809C9.26012 4.52601 7.71243 5.16687 6.43786 6.44858C5.16329 7.73029 4.52601 9.28665 4.52601 11.1177C4.52601 12.9487 5.16329 14.5014 6.43786 15.776C7.71243 17.0506 9.26012 17.6879 11.0809 17.6879ZM11.09 13.3699C11.7429 13.3699 12.2861 13.1486 12.7197 12.706C13.1532 12.2633 13.3699 11.7344 13.3699 11.1193C13.3699 10.5041 13.1501 9.9711 12.7105 9.52023C12.2709 9.06936 11.7333 8.84393 11.0978 8.84393C10.4623 8.84393 9.92775 9.06876 9.49422 9.51841C9.06069 9.96806 8.84393 10.5056 8.84393 11.1311C8.84393 11.7566 9.06482 12.2861 9.5066 12.7197C9.94838 13.1532 10.4762 13.3699 11.09 13.3699ZM24.8807 13.3699C25.4959 13.3699 26.0289 13.1486 26.4798 12.706C26.9306 12.2633 27.1561 11.7344 27.1561 11.1193C27.1561 10.5041 26.9312 9.9711 26.4816 9.52023C26.0319 9.06936 25.4944 8.84393 24.8689 8.84393C24.2434 8.84393 23.7139 9.06876 23.2803 9.51841C22.8468 9.96806 22.6301 10.5056 22.6301 11.1311C22.6301 11.7566 22.8514 12.2861 23.294 12.7197C23.7367 13.1532 24.2656 13.3699 24.8807 13.3699Z" fill="#D03A3A"/>
+                        </svg>
+                    <h3>Robo Battle (School)</h3> 
+                    <p>
+                        Register with the Robotic Battle in the school category(for school students)
+                    </p> 
+                    <a href="#" class="cta-btn">Register Now</a>  
+                    <a href="#" class="cta-btn">
+                        Delegates Book
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 15.95L6.53646 10.225L8.30729 8.57501L11.276 11.425V3.35001H13.724V11.425L16.6927 8.57501L18.4635 10.225L12.5 15.95ZM5.96354 20.625C5.28559 20.625 4.70812 20.396 4.23112 19.9381C3.75412 19.4802 3.51562 18.9258 3.51562 18.275V14.7H5.96354V18.275H19.0365V14.7H21.5104V18.275C21.5104 18.925 21.2694 19.4792 20.7873 19.9375C20.3052 20.3958 19.7216 20.625 19.0365 20.625H5.96354Z" fill="white"/>
+                            </svg>                            
+                    </a>                    
+                </div>
+                <div class="grid-item">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.48374 40.5149V33.7507H10.0935L5.17886 16.9986C3.5935 16.5054 2.33401 15.6687 1.40041 14.4885C0.466802 13.3083 0 11.7493 0 9.81165C0 7.83875 0.722222 6.12127 2.16667 4.65921C3.61111 3.19715 5.31978 2.46612 7.29268 2.46612C9.15989 2.46612 10.7276 2.97696 11.9959 3.99864C13.2642 5.02032 14.1274 6.42954 14.5854 8.22629H20.3455V5.1084C20.3455 4.50948 20.5569 3.99864 20.9797 3.57588C21.4024 3.15312 21.9133 2.94173 22.5122 2.94173C22.8645 2.94173 23.1728 3.06504 23.437 3.31165C23.7012 3.55827 23.8509 3.85772 23.8862 4.21003L27.4797 0.775068C27.8672 0.422764 28.334 0.184959 28.8801 0.0616531C29.4262 -0.0616531 29.981 0 30.5447 0.246612L38.8943 4.26287C39.3875 4.50948 39.7222 4.8794 39.8984 5.37263C40.0745 5.86585 40.0217 6.37669 39.7398 6.90515C39.4932 7.36314 39.1233 7.6626 38.6301 7.80352C38.1369 7.94444 37.6612 7.87398 37.2033 7.59214L29.435 3.78726L24.7317 8.54336V10.7629L29.435 15.7832L37.2033 12.0312C37.7317 11.7846 38.2161 11.7141 38.6565 11.8198C39.0969 11.9255 39.458 12.2073 39.7398 12.6653C40.0217 13.1938 40.0745 13.7222 39.8984 14.2507C39.7222 14.7791 39.3699 15.1667 38.8415 15.4133L30.9146 19.1653C30.2453 19.5176 29.6199 19.6762 29.0386 19.6409C28.4573 19.6057 27.9377 19.3591 27.4797 18.9011L23.8862 15.4661C23.8509 15.9593 23.71 16.294 23.4634 16.4702C23.2168 16.6463 22.8997 16.7344 22.5122 16.7344C21.9133 16.7344 21.4024 16.523 20.9797 16.1003C20.5569 15.6775 20.3455 15.1667 20.3455 14.5677V11.397H14.4797C14.4092 11.9959 14.189 12.6741 13.8191 13.4316C13.4492 14.189 13.0528 14.7087 12.6301 14.9905L22.3008 33.7507H32.0244V40.5149H2.48374ZM7.29268 12.771C8.13821 12.771 8.84282 12.4892 9.4065 11.9255C9.97019 11.3618 10.252 10.6572 10.252 9.81165C10.252 8.96612 9.97019 8.26152 9.4065 7.69783C8.84282 7.13415 8.13821 6.8523 7.29268 6.8523C6.44715 6.8523 5.74255 7.13415 5.17886 7.69783C4.61518 8.26152 4.33333 8.96612 4.33333 9.81165C4.33333 10.6572 4.61518 11.3618 5.17886 11.9255C5.74255 12.4892 6.44715 12.771 7.29268 12.771ZM13.6341 33.7507H18.7602L9.82927 16.2588C9.65312 16.3645 9.43293 16.4614 9.1687 16.5495C8.90447 16.6375 8.7019 16.6992 8.56098 16.7344L13.6341 33.7507Z" fill="#D03A3A"/>
+                        </svg>
+                        
+                    <h3>Exhibition</h3> 
+                    <p>
+                        Register with the electronics related Exhibition to compete with the newest technologies.
+                    </p> 
+                    <a href="#" class="cta-btn">Register Now</a>  
+                    <a href="#" class="cta-btn">
+                        Delegates Book
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 15.95L6.53646 10.225L8.30729 8.57501L11.276 11.425V3.35001H13.724V11.425L16.6927 8.57501L18.4635 10.225L12.5 15.95ZM5.96354 20.625C5.28559 20.625 4.70812 20.396 4.23112 19.9381C3.75412 19.4802 3.51562 18.9258 3.51562 18.275V14.7H5.96354V18.275H19.0365V14.7H21.5104V18.275C21.5104 18.925 21.2694 19.4792 20.7873 19.9375C20.3052 20.3958 19.7216 20.625 19.0365 20.625H5.96354Z" fill="white"/>
+                            </svg>                            
+                    </a>                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="timeline" id="timeline">
+        <div class="container">
+            <h1>Digital Dreams <span>Timeline</span></h1>
+            <ul class="timeline">
+
+                <!-- Item 1 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Opening of Registration</span>
+                            <span class="time-wrapper"><span class="time">3rd of September 2023</span></span>
+                        </div>
+                        <div class="desc">Start</div>
+                    </div>
+                </li>
+              
+                <!-- Item 2 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Closing of Registration</span>
+                            <span class="time-wrapper"><span class="time">13rd of September 2023</span></span>
+                        </div>
+                        <div class="desc">Closing date</div>
+                    </div>
+                </li>
+                <!-- Item 3 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Awareness Session</span>
+                            <span class="time-wrapper"><span class="time">3rd of September 2023</span></span>
+                        </div>
+                        <div class="desc">Start</div>
+                    </div>
+                </li>
+              
+                <!-- Item 4 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Workshop Series</span>
+                            <span class="time-wrapper"><span class="time">13rd of September 2023</span></span>
+                        </div>
+                        <div class="desc">Closing date</div>
+                    </div>
+                </li>
+                <!-- Item 5 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">D-Day</span>
+                            <span class="time-wrapper"><span class="time">3rd of September 2023</span></span>
+                        </div>
+                        <div class="desc">Start</div>
+                    </div>
+                </li>
+              
+                <!-- Item 6 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Grab The Trophy</span>
+                            <span class="time-wrapper"><span class="time">13rd of September 2023</span></span>
+                        </div>
+                        <div class="desc">Closing date</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sec-3" id="workshop">
+        <div id="container3D2"></div>
+        <div class="container">
+            <h1>Register for <span>Workshops</span></h1>
+            <div class="grid-sec">
+                <div class="grid-item">
+                    <img src="./images/workshop.jpg" alt="">
+                    <a href="#" class="cta-btn">Register Now</a>
+                </div>
+                <div class="grid-item">
+                    <img src="./images/workshop.jpg" alt="">
+                    <a href="#" class="cta-btn">Register Now</a>
+                </div>
+                <div class="grid-item">
+                    <img src="./images/workshop.jpg" alt="">
+                    <a href="#" class="cta-btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4"  id="sponser">
+        <div class="container">
+            <h1>Official <span>Partners</span></h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/carousel.png" alt="">
+                    <div>
+                        <h2>Official <span>Title Partner</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque sem purus, a rhoncus libero mattis sed. 
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/landing-back.png" alt="">
+                    <div>
+                        <h2>Official <span>Title Partner</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque sem purus, a rhoncus libero mattis sed. 
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/workshop.jpg" alt="">
+                    <div>
+                        <h2>Official <span>Title Partner</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque sem purus, a rhoncus libero mattis sed. 
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="sponser">
+                <svg width="127" height="129" viewBox="0 0 127 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M62.618 110.187C63.0296 110.187 63.522 110.098 64.0953 109.919C64.6686 109.74 65.1757 109.426 65.6167 108.978L109.67 64.0968C110.989 62.7518 112.024 61.1641 112.776 59.3335C113.527 57.503 113.903 55.583 113.903 53.5732C113.903 51.6306 113.527 49.6941 112.776 47.7635C112.024 45.833 110.989 44.1556 109.67 42.7312L89.5614 22.3062C88.3267 21.1416 86.9007 20.2682 85.2833 19.6859C83.6659 19.1036 82.0272 18.8125 80.3672 18.8125C78.7356 18.8125 77.126 19.0812 75.5385 19.6187C73.951 20.1562 72.6281 20.9177 71.5698 21.9031L70.1146 23.5156L80.0364 33.5937C81.4476 35.2062 82.7043 37.0427 83.8068 39.1031C84.9092 41.1635 85.4604 43.4508 85.4604 45.9649C85.4604 50.0799 83.8472 53.75 80.6207 56.975C77.3941 60.2 73.7005 61.8125 69.5398 61.8125C66.8362 61.8125 64.5804 61.3869 62.7724 60.5359C60.9644 59.6848 59.2806 58.4602 57.7208 56.8619L48.2865 47.3L26.7229 69.2031C26.2819 69.5614 25.9733 70.0105 25.7969 70.5503C25.6205 71.0902 25.5323 71.6431 25.5323 72.2088C25.5323 73.3404 25.8851 74.2645 26.5906 74.9812C27.2962 75.6979 28.2075 76.0562 29.3247 76.0562C29.8832 76.0562 30.4271 75.9218 30.9562 75.6531C31.4854 75.3843 31.9264 75.0708 32.2792 74.7125L49.2125 57.5125L54.7687 63.1562L37.9763 80.2103C37.5296 80.6659 37.2181 81.193 37.0417 81.7916C36.8653 82.3902 36.7771 82.9419 36.7771 83.4468C36.7771 84.5666 37.1299 85.496 37.8354 86.2351C38.541 86.9742 39.4229 87.3437 40.4812 87.3437C41.0104 87.3437 41.5396 87.2317 42.0687 87.0078C42.5979 86.7838 43.0855 86.4901 43.5316 86.1265L60.1927 69.0687L65.749 74.7125L48.8271 91.7703C48.5549 92.1338 48.2865 92.6067 48.0219 93.189C47.7573 93.7713 47.625 94.3312 47.625 94.8687C47.625 95.9795 48.0108 96.9291 48.7825 97.7175C49.5542 98.5058 50.484 98.9 51.5717 98.9C52.1155 98.9 52.63 98.788 53.1151 98.564C53.6002 98.3401 54.0191 98.0489 54.3719 97.6906L71.3052 80.3562L76.8615 86L59.9281 103.2C59.5753 103.648 59.2887 104.171 59.0682 104.77C58.8477 105.368 58.7375 105.875 58.7375 106.291C58.7375 107.581 59.0903 108.553 59.7958 109.207C60.5014 109.86 61.4421 110.187 62.618 110.187ZM62.7147 121.341C59.3577 121.341 56.3342 120.221 53.6443 117.981C50.9543 115.742 49.2125 112.87 48.4187 109.365C45.5965 108.838 43.1491 107.5 41.0766 105.35C39.004 103.2 37.7031 100.736 37.174 97.9593C34.5281 97.3322 32.191 95.9885 30.1625 93.9281C28.134 91.8677 26.8111 89.4937 26.1937 86.8062C22.8424 86 20.0422 84.2295 17.7932 81.4949C15.5443 78.7602 14.4198 75.6012 14.4198 72.0178C14.4198 70.1413 14.8045 68.2603 15.5739 66.3746C16.3433 64.489 17.3697 62.8339 18.6531 61.4093L48.2865 31.3093L64.8229 47.9718C65.5285 48.6885 66.3075 49.2708 67.1601 49.7187C68.0126 50.1666 68.9092 50.3906 69.85 50.3906C70.9462 50.3906 71.9698 49.8755 72.921 48.8453C73.8723 47.8151 74.3479 46.7556 74.3479 45.6668C74.3479 45.1431 74.1495 44.5005 73.7526 43.739C73.3557 42.9776 72.8486 42.2385 72.2312 41.5218L53.0396 22.0271C51.9875 20.959 50.6016 20.1562 48.8818 19.6187C47.162 19.0812 45.3876 18.8125 43.5586 18.8125C41.6695 18.8125 39.9567 19.0812 38.4203 19.6187C36.8838 20.1562 35.6331 20.956 34.6682 22.0182L15.875 40.85C14.9049 41.925 14.1993 43.2015 13.7583 44.6796C13.3174 46.1578 13.0969 47.9046 13.0969 49.9203C13.1851 51.3088 13.5819 52.6302 14.2875 53.8843C14.9931 55.1385 15.7427 56.3031 16.5365 57.3781L8.73125 65.3062C6.96736 63.7833 5.46805 61.5437 4.23333 58.5875C2.99861 55.6312 2.33715 52.675 2.24895 49.7187C2.16076 46.3145 2.60173 43.2239 3.57187 40.4468C4.54201 37.6697 6.08541 35.2062 8.20208 33.0562L26.7229 14.1093C28.8396 11.9593 31.4371 10.3692 34.5154 9.33901C37.5938 8.30881 40.642 7.7937 43.6602 7.7937C46.9429 7.7937 50.0443 8.30881 52.9646 9.33901C55.8848 10.3692 58.3823 11.8697 60.4573 13.8406L62.0448 15.3187L63.5 13.8406C65.5285 11.9593 68.077 10.4812 71.1455 9.4062C74.2142 8.3312 77.301 7.7937 80.4059 7.7937C83.511 7.7937 86.5628 8.37599 89.5614 9.54058C92.5601 10.7052 95.1177 12.3625 97.2344 14.5125L118.136 35.6093C120.343 37.8143 121.997 40.5619 123.099 43.8519C124.2 47.1419 124.751 50.3613 124.751 53.5101C124.751 56.7484 124.134 60.0392 122.899 63.3822C121.664 66.7253 119.944 69.5614 117.74 71.8906L73.2896 116.906C71.8785 118.34 70.2675 119.437 68.4567 120.198C66.6459 120.96 64.7319 121.341 62.7147 121.341Z" fill="#D03A3A"/>
+                    </svg>
+                <div>
+                    <h3>Want to <span>Sponser</span> ?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius, lectussit amet, consectetur adipiscing elit. Ut varius, lectus
+                    </p>
+                    <a href="#" class="cta-btn">Contact Now</a>
+                </div>                    
+            </div>
+    </section>
+    <section class="sec-5"  id="merch">
+        <div class="container">
+            <h1>Merchandise</h1>
+            <div class="grid-sec">
+                <div class="grid-item">
+                    <img src="./images/merch.png" alt="">
+                    <p>LKR 1500.00</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./images/merch.png" alt="">
+                    <p>LKR 1500.00</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./images/merch.png" alt="">
+                    <p>LKR 1500.00</p>
+                </div>
+            </div>
+            <a href="#" class="cta-btn">Pre-Order Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <img src="./images/logo.png" alt="">
+                <p>
+                    "The future of technology is in your hands. Join with us and explore your passion in electronics."
+                </p>
+            </div>
+                <div>
+                    <p>Sitemap</p>
+                    <a href="/index.html">Home</a>
+                    <a href="#merch">Merch</a>
+                    <a href="#event">Events</a>
+                    <a href="#about">About Us</a>
+                </div>
+                <div>
+                    <p>Social Media</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script type="module" src="js/main.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script>
+                
+// navbar
+window.addEventListener('scroll',function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+  
+  function togglemenu(){
+    const menutoggle = document.querySelector('.menutoggle');
+    const navigation = document.querySelector('.links');
+    const cta = document.querySelector('.cta-btn');
+    menutoggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    cta.classList.toggle('active');
+  };
+  
+  // navbar active status change
+  document.addEventListener("DOMContentLoaded", function() {
+    var sections = document.querySelectorAll("section");
+    var navLinks = document.querySelectorAll(".links a");
+  
+    function changeLinkActive() {
+      var currentSection = "";
+  
+      sections.forEach(function(section) {
+        var sectionTop = section.offsetTop;
+        var sectionHeight = section.offsetHeight;
+  
+        if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+  
+      navLinks.forEach(function(link) {
+        link.classList.remove("active");
+        if (link.getAttribute("href").substring(1) === currentSection) {
+          link.classList.add("active");
+        }
+      });
+    }
+  
+    window.addEventListener("scroll", changeLinkActive);
+  });
+    
+    </script>
+</body>
+</html>
