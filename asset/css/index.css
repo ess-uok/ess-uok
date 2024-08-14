@@ -582,8 +582,13 @@ nav{
 #image-track {
     display: flex;
     gap: 4vmin;
+<<<<<<< Updated upstream
     position: absolute;
     left: 55%;
+=======
+    position:relative;
+    left: 50%;
+>>>>>>> Stashed changes
     top: 35%;
     transform: translate(0%, -50%); 
     user-select: none; /* -- Prevent image highlighting -- */
