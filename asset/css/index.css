@@ -600,7 +600,7 @@ nav{
 @media (max-width: 1260px) {
     #image-track {
         left: 60%;
-        top: 30%;
+        top: 29%;
     }
 
     #image-track > .image {
@@ -624,11 +624,16 @@ nav{
         left: 65%;
         top: 29%;
     }
+    #image-track > .image {
+        width: 50vh;
+        height: 10vh;
+    }
+
 }
 @media (max-width: 950px) {
     #image-track {
         left:77%;
-        top: 29%;
+        top: 40%;
     }
     #image-track > .image {
         width: 20vh;
