@@ -627,9 +627,15 @@ nav{
 }
 @media (max-width: 950px) {
     #image-track {
-        left:78%;
+        left:77%;
         top: 29%;
     }
+    #image-track > .image {
+        width: 20vh;
+        height: 40vh;
+        object-position: 50% center;
+    }
+
 }
 @media screen and (max-width: 900px){
     #image-track > .image  {
