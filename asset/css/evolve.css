@@ -14,7 +14,9 @@
 .titles{
     margin-bottom: 30px;
 }
-
+.decs{
+    padding:0 50px;
+}
 .decs h4{
     text-align: justify;
 }
@@ -32,6 +34,15 @@
     width: 30%;
     margin-right: 5px;
     border-radius: 20px;
+}
+.buttonevo{
+    margin-left:50px;
+    margin-top: 10px;
+}
+.buttonevo a{
+    color : white;
+    font-weight : bold;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 700px){
