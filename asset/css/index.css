@@ -600,40 +600,40 @@ nav{
 @media (max-width: 1260px) {
     #image-track {
         left: 60%;
-        top: 29%;
+        top: 28%;
     }
 
     #image-track > .image {
         width: 50vh;
-        height: 35vh;
+        height: 50vh;
     }
 }
 @media (max-width: 1220px) {
     #image-track {
         left: 62%;
-        top: 29%;
+        top: 28%;
     }
 
     #image-track > .image {
         width: 50vh;
-        height: 35vh;
+        height: 55vh;
     }
 }
 @media (max-width: 1100px) {
     #image-track {
         left: 65%;
-        top: 29%;
+        top: 30%;
     }
     #image-track > .image {
         width: 50vh;
-        height: 10vh;
+        height: 48vh;
     }
 
 }
 @media (max-width: 950px) {
     #image-track {
         left:77%;
-        top: 40%;
+        top: 90%;
     }
     #image-track > .image {
         width: 20vh;
@@ -646,6 +646,7 @@ nav{
     #image-track > .image  {
         width: 20vh;
         height: 50vh;
+        visibility: hidden;
     }
     #image-track {
         top: 42%;
