@@ -23,11 +23,13 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    width: 350px;
     margin: 10px;
     overflow: hidden;
     text-align: center;
 }
+
+
 
 /* Image styling */
 .member-image {
@@ -55,6 +57,7 @@
     font-size: 22px;
     color: #333;
     margin: 10px 0 0;
+    text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
