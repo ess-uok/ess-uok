@@ -27,6 +27,21 @@
     margin: 10px;
     overflow: hidden;
     text-align: center;
+    animation: scaleUp 1s ease-out;
+    animation-delay: 2s;
+    
+}
+
+.member-card:hover{
+    background-color: #2f2f2f1f;
+    transition: 1s ease-in-out;
+    
+    
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
 }
 
 
