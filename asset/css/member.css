@@ -1,6 +1,6 @@
 .container {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 /* Title styling */
@@ -16,6 +16,9 @@
     grid-template-columns: repeat(4, 1fr); /* 4 cards per row on large screens */
     gap: 20px; /* Space between cards */
     justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    width: 90%;
 }
 
 /* Member card styling */
